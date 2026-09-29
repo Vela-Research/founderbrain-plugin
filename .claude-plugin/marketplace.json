@@ -1,0 +1,14 @@
+{
+  "name": "founderbrain-marketplace",
+  "owner": { "name": "Vela Partners Management LLC", "email": "support@thinkreasonlearn.com" },
+  "description": "The FounderBrain plugin, for installing from GitHub in Claude Code before the directory listing is live.",
+  "plugins": [
+    {
+      "name": "founderbrain",
+      "source": "./",
+      "description": "Read how one speaker came across in a meeting transcript and get coached on it.",
+      "version": "0.1.0",
+      "category": "productivity"
+    }
+  ]
+}

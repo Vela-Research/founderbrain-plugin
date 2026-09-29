@@ -1,0 +1,15 @@
+{
+  "name": "founderbrain",
+  "displayName": "FounderBrain",
+  "version": "0.1.0",
+  "description": "Read how one speaker came across in a meeting transcript, compared with 773 public founder and operator interviews, and get coached on what to try next time. Powered by think-reason-learn.",
+  "author": {
+    "name": "Vela Partners Management LLC",
+    "email": "support@thinkreasonlearn.com",
+    "url": "https://thinkreasonlearn.com"
+  },
+  "homepage": "https://thinkreasonlearn.com",
+  "repository": "https://github.com/Vela-Research/founderbrain-plugin",
+  "license": "MIT",
+  "keywords": ["meetings", "transcripts", "pitch", "coaching", "founders", "communication"]
+}
