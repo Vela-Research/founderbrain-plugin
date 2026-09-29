@@ -15,7 +15,7 @@ The analysis describes one conversation, not your personality. Neither end of a 
 | Tool | What it does |
 |---|---|
 | `check_transcript` | Lists the speakers in a transcript and how many words each said. Nothing is scored. |
-| `read_transcript` | Analyses one speaker and returns the report as data. In Claude on the web and desktop the full report also appears in the chat. The analysis usually takes under a minute, after Claude has sent the transcript, which can take a few minutes for a long meeting. |
+| `analyse_transcript` | Analyses one speaker and returns the report as data. In Claude on the web and desktop the full report also appears in the chat. The analysis usually takes under a minute, after Claude has sent the transcript, which can take a few minutes for a long meeting. |
 
 Both only read. None of them changes anything anywhere.
 

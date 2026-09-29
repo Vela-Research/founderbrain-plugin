@@ -10,11 +10,11 @@ FounderBrain analyses one speaker in a meeting transcript and compares how they 
 ## 1. Get the analysis
 
 - **The user has not given a transcript yet.** Ask them to attach or paste it here. Any notes or recording tool's transcript works if it has speaker labels.
-- **The user attached or pasted a transcript.** Read the speaker labels yourself and ask one short question that confirms which speaker is them and whether they were pitching or answering questions, or mostly asking them. Then call `read_transcript` once with the full text. Do not call `check_transcript` first unless you genuinely cannot find the labels, because that sends the whole text twice. For a transcript over about 5,000 words, say first in one sentence that sending it takes a few minutes.
+- **The user attached or pasted a transcript.** Read the speaker labels yourself and ask one short question that confirms which speaker is them and whether they were pitching or answering questions, or mostly asking them. Then call `analyse_transcript` once with the full text. Do not call `check_transcript` first unless you genuinely cannot find the labels, because that sends the whole text twice. For a transcript over about 5,000 words, say first in one sentence that sending it takes a few minutes.
 
 If a report is already in the conversation, skip straight to coaching.
 
-## 2. Prepare the text for read_transcript
+## 2. Prepare the text for analyse_transcript
 
 Use the `prepare-transcript` skill when the text is not already one speaker turn per line. In short:
 

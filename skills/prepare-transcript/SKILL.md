@@ -1,11 +1,11 @@
 ---
 name: prepare-transcript
-description: Turn a meeting transcript from Zoom, Google Meet, Teams, Otter, Fireflies, Granola, a .vtt or .srt caption file, or a rough paste into the one-speaker-turn-per-line text that the FounderBrain read_transcript tool needs. Use before calling read_transcript whenever the text has timestamps, caption numbers, labels on their own lines, or speaker labels with digits.
+description: Turn a meeting transcript from Zoom, Google Meet, Teams, Otter, Fireflies, Granola, a .vtt or .srt caption file, or a rough paste into the one-speaker-turn-per-line text that the FounderBrain analyse_transcript tool needs. Use before calling analyse_transcript whenever the text has timestamps, caption numbers, labels on their own lines, or speaker labels with digits.
 ---
 
 # Prepare a transcript for FounderBrain
 
-`read_transcript` finds speakers by lines shaped like `Label: what they said`. Anything else is ignored, so a transcript in another shape reads as having no speakers, or too few words.
+`analyse_transcript` finds speakers by lines shaped like `Label: what they said`. Anything else is ignored, so a transcript in another shape reads as having no speakers, or too few words.
 
 ## The target shape
 
@@ -32,4 +32,4 @@ Ana Ruiz: About sixty percent of teams are still active at day thirty ...
 
 - Check that the person the user wants analysed has at least 300 words. Fewer than that cannot be analysed.
 - Check the whole text is under 15,000 words. If it is longer, ask the user which part of the meeting matters most and send that part.
-- Tell the user in one sentence what you changed, for example "I removed the timestamps and joined the caption lines." Then call `read_transcript`.
+- Tell the user in one sentence what you changed, for example "I removed the timestamps and joined the caption lines." Then call `analyse_transcript`.
