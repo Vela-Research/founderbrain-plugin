@@ -21,6 +21,8 @@ Both only read. None of them changes anything anywhere.
 
 ## Try it
 
+`examples/sample-transcript.txt` is a made-up pitch to try it on: Ana Ruiz, founder of Harbourline, with an investor called Tom.
+
 - "Here's the transcript of my seed pitch yesterday. How did I come across?"
 - "I'm Speaker 1 in this call with an investor. What should I work on before my next pitch?"
 - "I have a Series A meeting tomorrow. Based on this last pitch, what should I keep doing?"
