@@ -6,4 +6,4 @@ We aim to answer within two working days.
 
 Security issues go to security@thinkreasonlearn.com. We will reply before we fix anything in public.
 
-Service status and known limits are at https://thinkreasonlearn.com/status.
+How it works and its known limits are at https://thinkreasonlearn.com/founderbrain.

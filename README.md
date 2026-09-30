@@ -35,7 +35,7 @@ Both only read. None of them changes anything anywhere.
 - One transcript of up to 15,000 words.
 - The person you choose needs at least 300 words of their own. Around 3,000 words gives a settled result.
 - Each line should be one speaker turn, such as `Ana: We started in 2024 ...`. The `prepare-transcript` skill handles most exports.
-- The service has hourly limits, a few analyses an hour for each person and a shared limit for everyone. If it is busy, try again later.
+- The service has usage limits, so at very busy times it may ask you to try again a little later.
 
 ## Where your data goes
 
@@ -51,7 +51,8 @@ The full privacy policy is at https://thinkreasonlearn.com/privacy.
 
 - **"No speaker turns were found."** The transcript is not one speaker per line. Ask Claude to prepare the transcript first.
 - **"Only N words of answers were found."** The person you picked spoke too little. Try a longer meeting.
-- **"Busy" or "as many transcripts as it will in an hour."** The service is at capacity. Try again in a few minutes.
+- **"Very high demand today".** The day's capacity is used up. Try again after midnight UTC.
+- **"Busy".** The service is at capacity for now. Try again a little later.
 - **The report does not appear in the chat.** Some apps, such as Claude Code, cannot show it. Claude still gets the full result and coaches from it.
 
 ## Support
