@@ -10,6 +10,8 @@
     "url": "https://thinkreasonlearn.com"
   },
   "homepage": "https://thinkreasonlearn.com",
+  "documentationUrl": "https://thinkreasonlearn.com/founderbrain",
+  "supportUrl": "https://thinkreasonlearn.com/founderbrain",
   "repository": "https://github.com/Vela-Research/founderbrain-plugin",
   "privacyPolicyUrl": "https://thinkreasonlearn.com/privacy",
   "license": "MIT",
