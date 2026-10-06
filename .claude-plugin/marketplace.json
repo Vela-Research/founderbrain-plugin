@@ -6,8 +6,8 @@
     {
       "name": "founderbrain",
       "source": "./",
-      "description": "Read how one speaker came across in a meeting transcript and get coached on it.",
-      "version": "0.1.0",
+      "description": "Get feedback on how you came across in a meeting transcript, and coaching on what to try next.",
+      "version": "0.2.0",
       "category": "productivity"
     }
   ]

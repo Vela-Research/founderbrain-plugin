@@ -1,8 +1,9 @@
 {
   "name": "founderbrain",
   "displayName": "FounderBrain",
-  "version": "0.1.0",
-  "description": "Read how one speaker came across in a meeting transcript, compared with 773 public founder and operator interviews, and get coached on what to try next time. Powered by think-reason-learn.",
+  "version": "0.2.0",
+  "description": "Get feedback on how you came across in a fundraising pitch, VC call, sales call or interview, compared with 773 public interviews of founders and CEOs, and coaching on what to try next. Powered by Think, Reason, Learn.",
+  "icon": ".claude-plugin/icon.png",
   "author": {
     "name": "Vela Partners Management LLC",
     "email": "support@thinkreasonlearn.com",
@@ -10,6 +11,16 @@
   },
   "homepage": "https://thinkreasonlearn.com",
   "repository": "https://github.com/Vela-Research/founderbrain-plugin",
+  "privacyPolicyUrl": "https://thinkreasonlearn.com/privacy",
   "license": "MIT",
-  "keywords": ["meetings", "transcripts", "pitch", "coaching", "founders", "communication"]
+  "keywords": [
+    "meetings",
+    "transcripts",
+    "pitch",
+    "fundraising",
+    "feedback",
+    "coaching",
+    "founders",
+    "communication"
+  ]
 }
