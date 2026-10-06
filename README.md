@@ -16,8 +16,9 @@ The analysis describes one conversation, not your personality. Neither end of a 
 |---|---|
 | `check_transcript` | Lists the speakers in a transcript and how many words each said. Nothing is scored. |
 | `analyse_transcript` | Analyses one speaker and returns the report as data. In Claude on the web and desktop the full report also appears in the chat. The analysis usually takes under a minute, after Claude has sent the transcript, which can take a few minutes for a long meeting. |
+| `open_in_terminal` | For Claude Code, Codex and other apps that run commands on your computer: gives Claude a `curl` command that uploads a transcript file (`.docx`, `.txt`, `.md` or `.vtt`) straight to the server, so Claude doesn't have to type it out. Nothing is downloaded or run apart from `curl` itself. |
 
-Both only read. None of them changes anything anywhere.
+None of them changes anything anywhere. The first two only read what Claude sends them. `open_in_terminal` reads nothing itself: the `curl` command it returns sends your file to FounderBrain when Claude runs it.
 
 ## Try it
 
@@ -29,7 +30,7 @@ Both only read. None of them changes anything anywhere.
 
 ## Other apps
 
-- **Codex.** Run `codex mcp add founderbrain --url https://mcp.thinkreasonlearn.com/mcp`. You get the results and coaching as text.
+- **Codex.** Run `codex mcp add founderbrain --url https://mcp.thinkreasonlearn.com/mcp`. You get the results and coaching as text. Codex's sandbox gives commands no network by default, so it sends the transcript as text, which works but is slower. For the faster file upload, add `network_access = true` under `[sandbox_workspace_write]` in `~/.codex/config.toml`.
 - **Skills only.** Run `npx skills add Vela-Research/founderbrain-plugin` to add the two skills to an agent that supports them, then add the connector address above.
 
 ## Limits
@@ -41,7 +42,7 @@ Both only read. None of them changes anything anywhere.
 
 ## Where your data goes
 
-- The transcript goes from Claude to the FounderBrain server at `https://mcp.thinkreasonlearn.com/mcp` and nowhere else.
+- The transcript goes from Claude to the FounderBrain server at `https://mcp.thinkreasonlearn.com/mcp` and nowhere else. In Claude Code and Codex the file itself can be sent instead, with `curl`; it is handled the same way.
 - It is scored on that server by our own model and deleted when the analysis finishes. We do not store transcripts, names or reports, and we do not train on them.
 - The report in the chat loads its script and fonts from the same server.
 - Our logs hold word counts, timings and error types, never text or names.
@@ -55,6 +56,8 @@ The full privacy policy is at https://thinkreasonlearn.com/privacy.
 - **"Only N words of answers were found."** The person you picked spoke too little. Try a longer meeting.
 - **"Very high demand today".** The day's capacity is used up. Try again after midnight UTC.
 - **"Busy".** The service is at capacity for now. Try again a little later.
+- **Claude Code asks before running `curl`.** That command uploads your transcript file to FounderBrain. Allow it that once for the faster route, or decline and Claude sends the text instead. Don't choose "always allow" for `curl`: that would let any later command upload any file without asking.
+- **Windows.** The upload command is written for bash and zsh, so with a Windows file path Claude sends the text instead.
 - **The report does not appear in the chat.** Some apps, such as Claude Code, cannot show it. Claude still gets the full result and coaches from it.
 
 ## Support
