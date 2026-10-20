@@ -2,7 +2,7 @@
   "name": "founderbrain",
   "displayName": "FounderBrain",
   "version": "0.2.0",
-  "description": "Get feedback on how you came across in a fundraising pitch, VC call, sales call or interview, compared with 773 public interviews of founders and CEOs, and coaching on what to try next. Powered by Think, Reason, Learn.",
+  "description": "Get feedback on how you came across in a fundraising pitch, VC call, sales call or interview, compared with 773 public interviews of founders and CEOs, and coaching on what to try next. Built with Think-Reason-Learn.",
   "icon": ".claude-plugin/icon.png",
   "author": {
     "name": "Vela Partners Management LLC",
