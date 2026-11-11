@@ -1,7 +1,7 @@
 {
   "name": "founderbrain",
   "displayName": "FounderBrain",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Get feedback on how you came across in a fundraising pitch, VC call, sales call or interview, compared with 773 public interviews of founders and CEOs, and coaching on what to try next. Built with Think-Reason-Learn.",
   "icon": ".claude-plugin/icon.png",
   "author": {
@@ -14,6 +14,7 @@
   "supportUrl": "https://thinkreasonlearn.com/founderbrain",
   "repository": "https://github.com/Vela-Research/founderbrain-plugin",
   "privacyPolicyUrl": "https://thinkreasonlearn.com/privacy",
+  "termsOfServiceUrl": "https://thinkreasonlearn.com/terms",
   "license": "MIT",
   "keywords": [
     "meetings",

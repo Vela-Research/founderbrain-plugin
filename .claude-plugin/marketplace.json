@@ -7,7 +7,7 @@
       "name": "founderbrain",
       "source": "./",
       "description": "Get feedback on how you came across in a meeting transcript, and coaching on what to try next.",
-      "version": "0.2.0",
+      "version": "0.2.1",
       "category": "productivity"
     }
   ]

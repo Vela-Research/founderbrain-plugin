@@ -16,9 +16,9 @@ The analysis describes one conversation, not your personality. Neither end of a 
 |---|---|
 | `check_transcript` | Lists the speakers in a transcript and how many words each said. Nothing is scored. |
 | `analyse_transcript` | Analyses one speaker and returns the report as data. In Claude on the web and desktop the full report also appears in the chat. The analysis usually takes under a minute, after Claude has sent the transcript, which can take a few minutes for a long meeting. |
-| `open_in_terminal` | For Claude Code, Codex and other apps that run commands on your computer: gives Claude a `curl` command that uploads a transcript file (`.docx`, `.txt`, `.md` or `.vtt`) straight to the server, so Claude doesn't have to type it out. Nothing is downloaded or run apart from `curl` itself. |
+| `get_transcript_upload_command` | For Claude Code, Codex and other apps that run commands on your computer: gives Claude a `curl` command that uploads a transcript file (`.docx`, `.txt`, `.md` or `.vtt`) straight to the server, so Claude doesn't have to type it out. Nothing is downloaded or run apart from `curl` itself. |
 
-None of them changes anything anywhere. The first two only read what Claude sends them. `open_in_terminal` reads nothing itself: the `curl` command it returns sends your file to FounderBrain when Claude runs it.
+None of them changes anything anywhere. The first two only read what Claude sends them. `get_transcript_upload_command` reads nothing itself: the `curl` command it returns sends your file to FounderBrain when Claude runs it.
 
 ## Try it
 
@@ -48,7 +48,7 @@ None of them changes anything anywhere. The first two only read what Claude send
 - Our logs hold word counts, timings and error types, never text or names.
 - Your Claude conversation, including the transcript, is kept by Anthropic under its own terms.
 
-The full privacy policy is at https://thinkreasonlearn.com/privacy.
+The full privacy policy is at https://thinkreasonlearn.com/privacy. By adding or using FounderBrain you agree to its terms of service at https://thinkreasonlearn.com/terms.
 
 ## Troubleshooting
 
